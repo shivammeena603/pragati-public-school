@@ -20,3 +20,62 @@
 .section{padding:80px 0}.soft{background:var(--cream)}.center{text-align:center;margin-bottom:40px}.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
 @media(max-width:800px){.hero-grid{grid-template-columns:1fr}.nav nav{display:none}}
+
+
+/* Container fix */
+.container { width: min(1200px, 90%); margin: auto; }
+
+/* Notice Board Look Improvement */
+.notice-wrapper {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.notice-item {
+    display: flex;
+    padding: 25px;
+    gap: 25px;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+    transition: 0.3s;
+}
+
+.notice-item:hover { background: #fffcf5; }
+
+/* Toppers Card Fix */
+.topper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.topper-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 24px;
+    border: 1px solid var(--line);
+    text-align: center;
+}
+
+/* Mobile Menu Fix */
+@media (max-width: 800px) {
+    .nav nav.open {
+        display: flex;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 30px;
+        border-bottom: 2px solid var(--gold);
+        z-index: 100;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .menu { display: block; cursor: pointer; }
+    .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .hero-logo-wrap { width: 120px; height: 120px; }
+}
