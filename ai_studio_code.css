@@ -1,0 +1,22 @@
+/* Purane styles wahi rahenge... Naye styles niche hain: */
+:root{--ink:#111827;--muted:#667085;--gold:#c8943e;--cream:#faf8f3;--line:#e8e5de;--dark:#101820}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}.container{width:min(1160px,92%);margin:auto}
+
+/* Header & Nav */
+.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1px solid #eee}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-logo{width:48px;height:48px;border-radius:50%;border:2px solid #d5ad55}.nav nav{display:flex;gap:25px;font-size:13px}.menu{display:none;background:none;border:0;font-size:25px;color:var(--gold)}
+
+/* Hero Section */
+.hero{padding:90px 0;background:radial-gradient(circle at 80% 25%,#f4ead8 0,transparent 34%),#fff}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.hero h1{font:700 clamp(42px,6vw,72px) "Playfair Display";margin:0;letter-spacing:-2px}em{font-style:normal;color:var(--gold)}.hero-card{background:linear-gradient(145deg,#0a2a50,#0d151c);padding:40px;border-radius:28px;text-align:center;color:#fff}.hero-logo-wrap{width:150px;height:150px;margin:0 auto 20px;border-radius:50%;overflow:hidden;border:3px solid var(--gold);background:#fff}.hero-logo{width:100%;height:100%;object-fit:cover}
+
+/* Notice Board */
+.notice-wrapper{background:#fff;border-radius:20px;border:1px solid var(--line);overflow:hidden}.notice-item{display:flex;padding:20px;gap:20px;border-bottom:1px solid var(--line);align-items:center}.notice-date{background:var(--cream);padding:10px;border-radius:10px;text-align:center;min-width:70px}.badge-new{background:red;color:#fff;font-size:10px;padding:2px 8px;border-radius:10px;animation:blink 1.5s infinite}
+
+/* Toppers Grid */
+.topper-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:20px}.topper-card{background:#fff;border:1px solid var(--line);padding:20px;border-radius:20px;text-align:center;transition:.3s}.topper-card img{width:80px;height:80px;border-radius:50%;margin-bottom:15px;border:2px solid var(--gold)}.topper-card h4{margin:5px 0}.topper-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.05)}
+
+/* Downloads */
+.download-container{display:flex;flex-wrap:wrap;gap:15px;justify-content:center}.btn{padding:12px 25px;border-radius:10px;font-weight:700;text-decoration:none;transition:.2s}.primary{background:var(--dark);color:#fff}.ghost{border:1px solid var(--line);background:#fff}
+
+.section{padding:80px 0}.soft{background:var(--cream)}.center{text-align:center;margin-bottom:40px}.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.nav nav{display:none}}

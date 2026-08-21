@@ -1,0 +1,15 @@
+{
+  "schoolName": "Pragati Public School",
+  "notices": [
+    { "date": "28 Aug", "text": "Half Yearly Exams starting from Sept 15.", "isNew": true },
+    { "date": "15 Aug", "text": "Independence Day Celebration was a great success.", "isNew": false }
+  ],
+  "toppers": [
+    { "name": "Rahul Sharma", "class": "10th", "score": "95%", "img": "https://placehold.co/100x100?text=Student" },
+    { "name": "Priya Singh", "class": "10th", "score": "93%", "img": "https://placehold.co/100x100?text=Student" }
+  ],
+  "downloads": [
+    { "title": "Syllabus 2024-25", "link": "#" },
+    { "title": "School Calendar", "link": "#" }
+  ]
+}
